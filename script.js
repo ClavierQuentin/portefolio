@@ -25,7 +25,7 @@ function newLetterDev(){
         str.textContent = array.join('');
         compteurDev++;
     }
-    setTimeout(newLetterDev,500)
+    setTimeout(newLetterDev,300)
 }
 function newLetterQ(){
     array.pop()
@@ -47,7 +47,7 @@ function newLetterQ(){
         str.textContent = array.join('');
         compteurDev++;
     }
-    setTimeout(newLetterQ,500)
+    setTimeout(newLetterQ,300)
 }
 function controle(){
     compteurDev = 0;
@@ -60,3 +60,4 @@ function controle(){
     }
 }
 setTimeout(controle,1000)
+
