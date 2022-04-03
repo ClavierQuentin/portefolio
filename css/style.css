@@ -38,9 +38,102 @@ h1,h2,h3{
     width: 85%;
     margin: auto;
     margin-bottom: 2%;
-
 }
-    /*--------------------------------------HEADER-----------------------------*/
+/*---------------LOGO--------------*/
+.logo{
+    position: sticky;
+    display: flex;
+    top: 2%;
+    margin-left: 2%;
+}
+.logo2{
+    position: relative;
+    display: flex;
+}
+.Q{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #527a7a;
+    border-radius: 50%;
+    animation: animateQ 5s linear infinite;
+}
+.Q2{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #527a7a;
+    border-radius: 50%;
+    animation: animateQ 5s linear infinite;
+}
+@keyframes animateQ{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.Q::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background: #527a7a;
+    top: 82%;
+    left: 65%;
+    transform:rotateZ(45deg);
+}
+.Q2::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background: #527a7a;
+    top: 82%;
+    left: 65%;
+    transform:rotateZ(45deg);
+}
+.C{
+    position: absolute;
+    left: 9%;
+    top: 9%;    
+    bottom: 9%; 
+    right: 50%;
+    background: #121212;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+    animation: animate 5s linear infinite;
+    transform-origin: right center;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} 
+   /*--------------------------------------HEADER-----------------------------*/
     header{  
         height: 95vh;
         background-image: url(../images/Auvergne_plateau_du_guery-17.jpg);
