@@ -313,9 +313,13 @@ h1,h2,h3{
     display: flex;
     justify-content: center;
 }
+.images{
+    height: 100%;
+    width: 100%;
+}
 .images_projets{
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     margin-bottom: 2%;
 }
 .images_projets:hover{
@@ -333,6 +337,11 @@ h1,h2,h3{
     grid-template-rows: repeat(3, 200px);
     row-gap: 3px;
     column-gap: 3px;
+}
+.containerImg{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
 }
 /*------------------------------CONTACT------------------------*/
     .decalageDroite{
