@@ -313,17 +313,17 @@ h1,h2,h3{
     display: flex;
     justify-content: center;
 }
-.images{
-    height: 100%;
-    width: 100%;
+.containerImg{
+    overflow: hidden;
 }
 .images_projets{
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
     margin-bottom: 2%;
 }
 .images_projets:hover{
     transform: scale(1.05);
+    transition: 0.5s;
 }
 .monContainer{
     width: 80%;
@@ -338,11 +338,7 @@ h1,h2,h3{
     row-gap: 3px;
     column-gap: 3px;
 }
-.containerImg{
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-}
+
 /*------------------------------CONTACT------------------------*/
     .decalageDroite{
         display: flex;
