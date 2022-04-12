@@ -152,4 +152,3 @@ window.addEventListener('scroll', () => {
     }
    
 })
-FB.getLoginStatus(); 
